@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!--------- Responsive Navigation Menu------>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- *****************======= icon links ========******************* -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="login">
+        <h2 class="login-page">LOGIN</h2>
+        <div class="login">
+            <p class="sign-content">Sign in to Account</p>
+        </div>
+        <div class="wrapper">
+            <i class="fa-solid fa-user-pen"></i>
+            <form action="#">
+                <!-- ==================First Name Input type ===================-->
+                <div class="field fName">
+                    <div class="input-area">
+                        <input type="text" placeholder="First Name">
+                        <i class="icon fa-solid fa-pencil"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-txt">First Name can't be blank</div>
+                </div>
+
+                <!-- ================================ last Name ========================= -->
+
+                <div class="field lName">
+                    <div class="input-area">
+                        <input type="text" placeholder="Last Name">
+                        <i class="icon fa-solid fa-pencil"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-txt">Last Name can't be blank</div>
+                </div>
+                <!-- ==========radio button============== -->
+                <div class="d-flex">
+
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="male" value="male" class="male">
+                        <label for="male" class="rbtn">Male</label>
+                    </div>
+
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="female" value="female" class="female">
+                        <label for="female" class="rbtn">Female</label>
+                    </div>
+
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="others" value="others" class="others">
+                        <label for="others" class="rbtn">Others</label>
+                    </div>
+                </div>
+                <div class="p5"></div>
+
+                <!-- ===============phone number=============== -->
+                <div class="field phoneNum">
+                    <div class="input-area">
+                        <input type="text" id="mobileNumber" placeholder="Enter your phone number">
+                        <i class="icon fa-solid fa-phone"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-txt" id="msg">Phone number can't be blank</div>
+                </div>
+                <!-- =============== Email Address  ============ -->
+                <div class="field email">
+                    <div class="input-area">
+                        <input type="text" placeholder="Email Address">
+                        <i class="icon fas fa-envelope"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-txt">Email can't be blank</div>
+                </div>
+                <!-- ============password============== -->
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="password" placeholder="Password">
+                        <i class="icon fas fa-lock"></i>
+                        <i class="error error-icon fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="error error-txt">Password can't be blank</div>
+                </div>
+
+                <!-- ===========Forget msg======== -->
+                <div class="pass-txt"><a href="#">Forgot password?</a></div>
+
+                <!-- ===========terms and conditions============= -->
+                <div>
+                    <label for="terms">
+                        <input type="checkbox" class="terms" />
+                        <h4 style="font-size: 16px;">I accept terms and conditions.</h4>
+                        <div class="p7"></div>
+                    </label>
+                </div>
+
+                <!-- =============button============ -->
+                <input type="submit" value="Login" onclick="validate()">
+            </form>
+            <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+        </div>
+        <br>
+        <p class="ovin"><span>©</span>Ovin Mano-All Rights Reserved</p> <br><br>
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>
