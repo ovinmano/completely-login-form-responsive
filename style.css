@@ -224,7 +224,7 @@ form input[type='radio'] {
   display: flex;
   padding: 10px 6%;
 }
-h4 {
+.h4 {
   padding-left: 10px;
 }
 @media(max-width:820px) {
