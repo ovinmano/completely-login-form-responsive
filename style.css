@@ -227,6 +227,10 @@ form input[type='radio'] {
 .h4 {
   padding-left: 10px;
 }
+.terms{
+  width: 40px;
+  height: 20px;
+}
 @media(max-width:820px) {
   /* =====login page====== */
   .wrapper {
